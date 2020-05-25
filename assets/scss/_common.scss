@@ -1,0 +1,191 @@
+/* -------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: fff;
+  color: $color-font;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* -------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* -------------------------------------- */
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/* ---HEADINGS --- */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: $color-primary;
+  content: ' ';
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* --- PARAGRAPHS --- */
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* ---- ICONS ---- */
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: $color-primary;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: $color-primary;
+  font-size: 120%;
+  margin-right: 10px;
+
+  /* icon align tricks */
+
+  vertical-align: middle;
+  line-height: 120%;
+  margin-top: -5px;
+}
+
+/* --- LINKS --- */
+
+a:link,
+a:visited {
+  color: $color-primary;
+  text-decoration: none;
+  border-bottom: 1px solid $color-primary;
+  padding-bottom: 1px;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: transparent;
+}
+
+/* --- BUTTONS --- */
+
+.btn:link,
+.btn:visited,
+input[type='submit'] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 50px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type='submit'] {
+  background-color: $color-primary;
+  color: #fff;
+  border: 1px solid $color-primary;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid $color-primary;
+  color: $color-primary;
+}
+
+.btn:hover,
+.btn:active,
+input[type='submit']:hover,
+input[type='submit']:active {
+  background-color: $color-accent;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid $color-accent;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid $color-accent;
+  color: #fff;
+}

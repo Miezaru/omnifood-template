@@ -1,0 +1,86 @@
+/* -------------------------------------- */
+/* FOOTER */
+/* -------------------------------------- */
+
+footer {
+  padding: 40px;
+  background-color: $color-dark;
+  color: $color-lighten;
+  font-size: 80%;
+}
+.footer-nav {
+  text-decoration: none;
+  list-style: none;
+  float: left;
+}
+
+.social-icons {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-icons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+  text-decoration: none;
+  border-bottom: 0;
+  color: $color-gray;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-icons li a:hover,
+.social-icons li a:active {
+  text-decoration: none;
+  border-bottom: 0;
+  color: $color-light;
+}
+
+.social-icons li a:visited,
+.social-icons li a:link {
+  font-size: 150%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+  color: $facebook;
+}
+
+.ion-social-instagram:hover {
+  color: $instagram;
+}
+
+.ion-social-twitter:hover {
+  color: $twitter;
+}
+
+.ion-social-googleplus:hover {
+  color: $googleplus;
+}
+
+footer p {
+  margin-top: 20px;
+  color: $color-gray;
+  text-align: center;
+}
